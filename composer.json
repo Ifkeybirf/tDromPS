@@ -1,0 +1,24 @@
+{
+    "license": "GPL V2",
+    "authors": [
+        {
+            "name": "Zlobnyashka",
+            "email": "zlobnyashka-nik@ya.ru",
+            "homepage": "https://github.com/Ifkeybirf/",
+            "role": "QA Engineer"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^9.6",
+        "facebook/webdriver":"*"
+    },
+    "scripts": {
+        "test": "phpunit",
+        "lint": "phpcs --standard=PSR12 ./src",
+        "lint-fix": "phpcbf --standard=PSR12 ./src",
+        "lintqa": "phpcs --standard=PSR12 ./tests",
+        "lintqa-fix": "phpcbf --standard=PSR12 ./tests",
+        "cept": "./vendor/bin/codecept",
+        "punit": "./vendor/bin/phpunit"
+    }
+}
